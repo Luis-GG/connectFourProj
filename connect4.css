@@ -1,0 +1,97 @@
+/* game board table */
+body{
+    margin: 0;
+  }
+  
+  #board td {
+  
+    width: 100px;
+    height: 100px;
+    border: solid 3px black;
+  }
+  #board{
+    margin: 10vh auto;
+  }
+  
+  #game{
+    width: 100vw;
+    height: 90vh;
+  
+  }
+  
+  
+  /* pieces are div within game table cells: draw as colored circles */
+  
+  
+  /* TODO: make pieces red/blue,  depending on player 1/2 piece */
+  .player1{
+    /* TODO: make into circles */
+    background-color: red;
+    border-radius: 50%;
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+  }
+  .player2{
+    /* TODO: make into circles */
+    background-color: blue;
+    border-radius: 50%;
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+  }
+  
+  
+  
+  /* column-top is table row of clickable areas for each column */
+  
+  #column-top td {
+    border: dashed 4px lightgray;
+  }
+  
+  #column-top td:hover {
+    background-color: rgba(255, 217, 0, 0.534);
+    border-radius: 50%;
+  }
+  
+  
+  
+  /*really bad use of @media*/
+  
+  @media screen and (max-width: 815px){
+    #board td{
+          width: 75px;
+          height: 75px;
+    }
+    
+    
+  }
+  @media screen and (max-width: 700px){
+    #board td{
+          width: 65px;
+          height: 65px;
+    }
+    
+    
+  }
+  @media screen and (max-height: 890px){
+    #board td{
+          width: 75px;
+          height: 75px;
+    }
+    #board{
+      margin: 7vh auto;
+    }
+  
+  
+  
+  @media screen and (max-height: 720px){
+    #board td{
+          width: 65px;
+          height: 65px;
+    }
+    #board{
+      margin: 3vh auto;
+    }
+    
+  } }
